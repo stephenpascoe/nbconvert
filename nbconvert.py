@@ -284,7 +284,7 @@ class Converter(object):
         "read, convert, and save self.infile"
         if not hasattr(self, 'nb'):
             self.read()
-        self.output = self.convert()
+        self.output = unicode(self.convert())
         return self.save()
 
     def read(self):
